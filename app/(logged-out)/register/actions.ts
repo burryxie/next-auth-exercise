@@ -43,16 +43,16 @@ export const registerUser = async ({
       email,
       password: hashedPassword,
     });
-  } catch (error: any) {
-    if (error.code === "23505") {
-      return {
-        error: true,
-        message: "该邮箱已经注册",
-      };
-    }
+  } catch (error: unknown) {
+    // if (error.code === "23505") {
+    //   return {
+    //     error: true,
+    //     message: "该邮箱已经注册",
+    //   };
+    // }
     return {
       error: true,
-      message: "An error occurred",
+      message: `An error occurred:${error}`,
     };
   }
 };
