@@ -1,11 +1,5 @@
 import { auth } from "@/auth";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import TwoFactorAuthForm from "./two-factor-auth-form";
 import db from "@/db/drizzle";

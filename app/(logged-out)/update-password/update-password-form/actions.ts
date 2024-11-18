@@ -4,8 +4,7 @@ import { auth } from "@/auth";
 import db from "@/db/drizzle";
 import { passwordResetTokensSchema, usersSchema } from "@/db/schemas";
 import { confirmPasswordMatch } from "@/validation/confirmPassword";
-import { passwordSchema } from "@/validation/passwordSchema";
-import { compare, hash } from "bcryptjs";
+import { hash } from "bcryptjs";
 import { eq } from "drizzle-orm";
 import { z } from "zod";
 

@@ -16,9 +16,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import UpdatePassword from "./actions";
-import { redirect } from "next/dist/server/api-utils";
 import { useToast } from "@/hooks/use-toast";
-import { Router } from "next/router";
 import Link from "next/link";
 
 const formSchema = confirmPasswordMatch;

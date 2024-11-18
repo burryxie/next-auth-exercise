@@ -25,7 +25,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { logIn, preLoginCheck } from "./actions";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { toast, useToast } from "@/hooks/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import {
   InputOTP,

@@ -20,10 +20,9 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { passwordSchema } from "@/validation/passwordSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import ResetPassword from "./actions";
-import { useParams, useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 const formSchema = z.object({
