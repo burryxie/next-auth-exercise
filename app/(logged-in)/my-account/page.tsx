@@ -14,7 +14,7 @@ const MyAccount = async () => {
       TwoFactorAuthSecretActivated: usersSchema.twoFactorAuthSecretActivated,
     })
     .from(usersSchema)
-    .where(eq(usersSchema.id, parseInt(session?.user?.id || "")));
+    .where(eq(usersSchema.id, parseInt(session?.user?.id!)));
 
   return (
     <div>

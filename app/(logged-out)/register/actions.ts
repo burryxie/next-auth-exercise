@@ -43,7 +43,7 @@ export const registerUser = async ({
       email,
       password: hashedPassword,
     });
-  } catch (error: unknown) {
+  } catch (error: any) {
     if (error.code === "23505") {
       return {
         error: true,
