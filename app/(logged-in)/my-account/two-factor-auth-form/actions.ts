@@ -36,7 +36,7 @@ export const get2faSecret = async () => {
     await db
       .update(usersSchema)
       .set({ twoFactorAuthSecret: twoFactorSecret })
-      .where(eq(usersSchema.id, parseInt(session?.user?.id!)));
+      .where(eq(usersSchema.id, parseInt(session?.user?.id || "")));
   }
 
   return {

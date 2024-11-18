@@ -44,7 +44,7 @@ export const logIn = async ({
   } catch (error: unknown) {
     return {
       error: true,
-      message: "用户名或密码错误",
+      message: `用户名或密码错误:${error}`,
     };
   }
 };

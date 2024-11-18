@@ -1,4 +1,3 @@
-import { auth } from "@/auth";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import db from "@/db/drizzle";
 import { passwordResetTokensSchema } from "@/db/passwordResetTokensSchema";

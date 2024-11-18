@@ -30,7 +30,6 @@ const formSchema = z.object({
 });
 
 function PasswordReset() {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -40,7 +39,7 @@ function PasswordReset() {
   });
 
   const handleSubmit = async (data: z.infer<typeof formSchema>) => {
-    const response = await ResetPassword({
+    await ResetPassword({
       email: data.email,
     });
   };

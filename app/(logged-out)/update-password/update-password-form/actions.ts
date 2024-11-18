@@ -6,7 +6,6 @@ import { passwordResetTokensSchema, usersSchema } from "@/db/schemas";
 import { confirmPasswordMatch } from "@/validation/confirmPassword";
 import { hash } from "bcryptjs";
 import { eq } from "drizzle-orm";
-import { z } from "zod";
 
 const UpdatePassword = async ({
   token,
